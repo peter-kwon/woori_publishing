@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>우리헌금서비스 헌금 정보 입력2</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+	<header id="sub_header">
+		<h1><a href="#a">동명교회</a></h1>
+		<button class="btn_back" onclick="fn_back()">이전 페이지</button>
+		<h2>헌금하기</h2>
+		<button>설정</button>
+	</header>
+    <div id="container">
+	<form name="Frm" id="Frm" method="post">
+		<div class="content">
+			<div class="">
+				<div class="">
+					<a href="#a">헌금종류 선택</a>
+					<p>
+						<input type="text" title="헌금 금액 입력" class="txtR" id="offerAmount" pattern="[0-9]*"
+							value="">
+						<a href="" class="btnTxtDel">금액 삭제</a>
+						<span>원</span>
+					</p>
+				</div>
+				<div class="">
+					<p class="msg" id="err_msg"> </p>
+					<div class="">
+						<textarea title="기도제목 입력" placeholder="기도제목을 입력해주세요"></textarea>
+						<p><span id="">0</span> / 200자</p>
+					</div>
+					<dl>
+						<dt>기타요청내용</dt>
+						<dd>
+							<input type="text" title="기타요청내용 입력"
+							 placeholder="기타요청내용을 입력해주세요 (최대 25자)"
+							 maxlength="25"
+								value="">
+							<p>※ 기도제목과 기타요청내용은 입력하지 않아도 헌금을 할 수 있습니다.</p><!-- OPTIMIZE:  -->
+						</dd>
+					</dl>
+					<div class="prayer">
+						<p>말할 수 없는 그의 은사로 인하여 하나님께 감사하노라<p><span>- 고린도후서 9:15</span></p>
+						</p>
+					</div>
+				</div>
+			</div>
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />ㅅㄷㄴㅇㅇㅇ
+<!-- btn_fixed -->
+			<div class="btn_fixed">
+				<button class="btn">헌금추가</button>
+				<button class="btn">다음</button>
+			</div>
+<!-- //btn_fixed -->
+		</div>
+	</form>
+	</div>
+</div>
+ <!-- loading -->
+<div class="loading" style="display:none">
+	<img src="./img/loading.gif" alt="">
+</div>
+<!-- //loading -->
+<div class="layer" style="display:none">
+	<p class="tit">헌금종류를 선택해주세요.</p>
+<!-- 팝업 -->
+	<div class="pop_cont">
+		 <div class="">
+			<ul>
+				<li>
+					<a data-color="15" data-offernm="주일헌금" data-mchno="0002-00001" data-offerkndno="1">
+						<em>주일헌금</em>
+					</a>
+				</li>
+				<li>
+					<a data-color="10" data-offernm="십일조헌금" data-mchno="0002-00001" data-offerkndno="2">
+						<em>십일조헌금</em>
+					</a>
+				</li>
+				<li>
+					<a data-color="13" data-offernm="감사헌금" data-mchno="0002-00001" data-offerkndno="3">
+						<em>감사헌금</em>
+					</a>
+				</li>
+				<li>
+					<a data-color="03" data-offernm="선교헌금" data-mchno="0002-00001" data-offerkndno="4">
+						<em>선교헌금</em>
+					</a>
+				</li>
+				<li>
+					<a data-color="09" data-offernm="장학헌금" data-mchno="0002-00001" data-offerkndno="5">
+						<em>장학헌금</em>
+					</a>
+				</li>
+				<li>
+					<a data-color="04" data-offernm="블레싱헌금" data-mchno="0002-00001" data-offerkndno="6">
+						<em>블레싱헌금</em>
+					</a>
+				</li>
+				<li>
+					<a data-color="07" data-offernm="비전헌금" data-mchno="0002-00001" data-offerkndno="7">
+						<em>비전헌금</em>
+					</a>
+				</li>
+				<li>
+					<a data-color="11" data-offernm="절기헌금" data-mchno="0002-00001" data-offerkndno="8">
+						<em>절기헌금</em>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="btn_area">
+			<button class="btn">닫기</button>
+		</div>
+	</div>
+<!-- //팝업 -->
+</div>
+</body>
+</html>

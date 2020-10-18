@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<title>우리헌금서비스</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+	<h1>우리<span>헌금</span>서비스</h1>
+	<p>에 오신걸 환영합니다.</p>
+<!-- 로그인박스 -->
+	<div class="login_box">
+		<form action="/church/login" method="post" id="">
+			<p>
+				<a href="#a">
+					<span>
+						<img src="./img/logo/none_logo.png">
+					</span>
+					<span>교회선택</span>
+				</a>
+			</p>
+			<p class="input_box"><input type="text" id="" name="" title="" value="" placeholder="아이디" maxlength="12"></p>
+			<p class="input_box"><input type="password" id="" name="" title="" placeholder="비밀번호" maxlength="12"></p>
+			<span class="check"><input type="checkbox" id="id_save"><label for="id_save">ID 저장하기</label></span>
+			<p class="err_msg">회원정보가 일치하지 않습니다.</p>
+			<p><button class="btn_login">로그인</button></p>
+		</form>
+	</div>
+<!-- //로그인박스 -->
+<!-- 회원버튼 -->
+	<div class="btn_mem">
+		<button onclick="mem_join('1')">회원가입</button>
+		<button onclick="find_id('2')">아이디 찾기</button>
+		<button onclick="find_pw('3')">비밀번호 찾기</button>
+	</div>
+<!-- //회원버튼 -->
+</div>
+</body>
+</html>

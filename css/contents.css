@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*
+#container {padding:0 0 26px; margin:-90px 0 0 0}
+#container .content {margin:0; padding:0; border-radius:0; box-shadow:none; background:none}
+#container .content .intro {overflow:hidden; padding:0 12px}
+#container .content .intro strong {float:left; margin-bottom:0; height:65px; line-height:65px; color:#fff}
+#container .content .intro strong img {height:42px; vertical-align:middle}
+#container .content .intro p {display:none}
+#container .content .intro .btnWorship {display:none; float:right; padding-top:20px; border-radius:50%; width:65px; height:65px; font-size:12px; font-weight:500; color:#111; background:#f1f1f1 url("../images/ico-play.png") no-repeat center 15px; background-size:auto 13px}
+*/
+.blind {visibility: hidden; overflow: hidden; position: absolute; top: 0 ;left: 0; width: 0; height: 0; font-size: 0; line-height: 0}
+#sub_header .inner_wrap h1 {display: none}
+
+/* 버튼 정렬 */
+.btn_fixed { display: flex; position: fixed; bottom: 0; left: 50%; width: 100%; max-width: 100%; transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); background: #645}
+.btn_fixed button{flex: 1}
+.btn_fixed .btn {display: inline-block; padding:2px 12px 0; border:1px solid #ccc; text-align:center; line-height:46px; font-size:22px; font-weight:500; color:#000; letter-spacing:-0.05em; background:#fff}
+
+
+/* 버튼 */
+.btn {display:inline-block; padding:2px 12px 0; border:1px solid #ccc; text-align:center; line-height:46px; font-size:22px; font-weight:500; color:#000; letter-spacing:-0.05em; background:#fff}
+.btn:disabled {border-color:#dbdbdb; background:#dbdbdb}
+.btn.ss {border-radius:14px; line-height:22px; font-size:16px}
+.btnYellowL {border-color:#ffcc00; color:#000; background:#fff}
+.btnGrayL {border-color:#dbdbdb; color:#000; background:#fff}
+.btnYellow {border-color:#ffcc00; color:#000; background:#ffcc00}
+.btnGray {border-color:#dbdbdb; color:#000; background:#dbdbdb}
+.btnLGray {border-color:#f4f4f4; color:#000; background:#f4f4f4}
+.btn span.icoArrow {display:inline-block; padding-right:30px; background:url("../images/ico-arrow02.png") no-repeat right center; background-size:20px auto}
+.btn span.icoArrow02 {display:inline-block; padding-right:18px; background:url("../images/ico-arrow03.png") no-repeat right center; background-size:12px auto}
+.btn span.icoDownload {display:inline-block; padding-right:23px; background:url("../images/ico-download.png") no-repeat right center; background-size:13px auto}
+.btn span.icoClose {display:block; text-indent:-9999px; background:url("../images/ico-close.png") no-repeat center; background-size:15px auto}
+.btnStar {display:block; width:23px; height:22px; text-indent:-9999px; background:url("../images/ico-star.png") no-repeat center; background-size:100% !important; transition:all 0.2s; -webkit-transition:all 0.2s; -moz-transition:all 0.2s}
+.btnStar.on {background:url("../images/ico-star-on.png") no-repeat center}
+
+/* 헌금하기 메인 */
+/*header h1 { position: absolute; top: 150px; color: #000}*/
+header .visual { height: 100%; background: url("../images/img_church.jpg") no-repeat center; background-size: cover;}
+header .visual img { padding: 2.4rem;}
+
+#container .content .m_title { padding-top: 4rem; font-size: 1.8rem; text-align: center}
